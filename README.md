@@ -1,4 +1,4 @@
-# 🏋️ Gym Members Exercise Data Analysis & Interactive Web App
+# 🏋️ Modeling Calorie Burn in Gym-Based Exercise Sessions
 
 This project transforms the **Gym Members Exercise** dataset into a complete **data analysis + statistical inference** workflow, culminating in an **interactive R Shiny web application**.
 
@@ -94,7 +94,7 @@ Choosing the **right question** and the **correct statistical test** is critical
 
 | Question | Statistical Test | Variables |
 |--------|-----------------|-----------|
-| Can calories burned be predicted?Can we predict calories burned from weight, session duration, and Avg BPM? | Multiple Linear Regression | DV: Calories Burned<br>IVs: Weight, Session Duration, Avg BPM |
+| Can we predict calories burned from weight, session duration, and Avg BPM? | Multiple Linear Regression | DV: Calories Burned<br>IVs: Weight, Session Duration, Avg BPM |
 | ⇒ Will the gender affect the calories burned from the following fields (weight, session duration, and Avg BPM)? | Multiple Linear Regression (with Gender) | DV: Calories Burned<br>IVs: Weight, Session Duration, Avg BPM, Gender |
 | ⇒ Which session type burns the most amount of calories assuming the session duration remains constant for two different genders? | Two-Way ANOVA | DV: Calories Burned<br>Factors: Gender, Session Type<br>Covariate: Session Duration |
 
