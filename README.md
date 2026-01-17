@@ -1,4 +1,5 @@
 # 🏋️ Modeling Calorie Burn in Gym-Based Exercise Sessions
+Author: Mustaqim Bin Burhanuddin (Piqim)
 
 This project transforms the **Gym Members Exercise** dataset into a complete **data analysis + statistical inference** workflow, culminating in an **interactive R Shiny web application**.
 
@@ -194,4 +195,8 @@ By the end of this project, users will be able to:
 
 ---
 
-💡 *This project demonstrates a full data-science pipeline: data → insight → inference → application.*
+## ❗ UPDATE: Key Findings (17.1.2026)
+- ✅ Session duration is the strongest predictor of calories burned (R² = 0.94)
+- ✅ Gender significantly affects calorie burn (~80 calories difference)
+- ⚠️ Workout type doesn't significantly differ when duration is controlled
+- 💡 Duration > Intensity for maximizing calorie burn
