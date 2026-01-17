@@ -178,11 +178,14 @@ Choosing the **right question** and the **correct statistical test** is critical
 
 ## 📚 References & Sources
 
-- :contentReference[oaicite:1]{index=1} TritonGPT (shared workspace)  
+- TritonGPT (shared workspace) => Use for reference and suggestions
   https://tritongpt.ucsd.edu/chat/shared/776926eb-edd8-4141-b03f-b9d3826830b6  
 
 - Kaggle Dataset  
-  https://www.kaggle.com/datasets/valakhorasani/gym-members-exercise-dataset/data  
+  https://www.kaggle.com/datasets/valakhorasani/gym-members-exercise-dataset/data
+
+- Professor David Quarfoot (MATH 181A - Introduction to Probability and Statistics I: Professor)
+  Visited office hours to gauge his opinion, he suggested statistical techniques and models to use to analyze and come up with appropriate results for the project.
 
 ---
 
