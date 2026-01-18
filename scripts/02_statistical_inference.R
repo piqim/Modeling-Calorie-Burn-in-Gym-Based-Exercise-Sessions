@@ -1,9 +1,12 @@
 # ==============================================================================
-# Part 2: Statistical Inference
-# Project: Modeling Calorie Burn in Gym-Based Exercise Sessions
+# Filename: 02_statistical_inference
+# Purpose: To conduct statistical inference on the data set and produce plots, 
+# graphs, bars and numerical values to validate hypothesis
+# Data set: gym_members_exercise_tracking.csv (KAGGLE)
+# Author: Mustaqim Bin Burhanuddin (Piqim)
 # ==============================================================================
 
-# Load packages ----------------------------------------------------------------
+# Load packages
 library(tidyverse)
 library(car)           # VIF and diagnostics
 library(broom)         # Tidy model outputs
@@ -14,10 +17,10 @@ library(ggeffects)     # Model predictions
 library(patchwork)     # Combine plots
 library(effectsize)    # Effect Size
 
-# Load data --------------------------------------------------------------------
+# Load data
 gym_data <- read_csv("./dataset/gym_members_exercise_tracking.csv")
 
-# Data preparation -------------------------------------------------------------
+# Data preparation
 gym_data <- gym_data %>%
   mutate(
     # Convert to factors
@@ -35,13 +38,8 @@ gym_data <- gym_data %>%
                                     levels = c("Beginner", "Intermediate", "Expert"))
   )
 
-# Create output directory
-if (!dir.exists("output")) {
-  dir.create("output")
-}
-
 # ==============================================================================
-# EXPLORATORY: Correlation Analysis
+# Correlation Analysis
 # ==============================================================================
 
 cat("\n=== CORRELATION ANALYSIS ===\n")
@@ -70,7 +68,7 @@ dev.off()
 
 # ==============================================================================
 # MODEL 1: Multiple Linear Regression (Base Model)
-# Research Question: Can we predict calories burned from weight, 
+# Question: Can we predict calories burned from weight, 
 #                    session duration, and Avg BPM?
 # ==============================================================================
 
@@ -111,7 +109,7 @@ dev.off()
 
 # ==============================================================================
 # MODEL 2: Multiple Linear Regression with Gender
-# Research Question: Does gender affect calories burned when controlling 
+# Question: Does gender affect calories burned when controlling 
 #                    for weight, session duration, and Avg BPM?
 # ==============================================================================
 
@@ -146,7 +144,7 @@ dev.off()
 
 # ==============================================================================
 # MODEL 3: Two-Way ANOVA (ANCOVA)
-# Research Question: Which workout type burns the most calories, 
+# Question: Which workout type burns the most calories, 
 #                    controlling for session duration across genders?
 # ==============================================================================
 
@@ -317,3 +315,4 @@ cat("✓ Total files created: ")
 cat(length(list.files("output", pattern = "model|anova|posthoc|emm|correlation")), "\n")
 
 cat("\n", rep("=", 80), "\n", sep = "")
+cat("Thank you for running the analysis! - Piqim :)")

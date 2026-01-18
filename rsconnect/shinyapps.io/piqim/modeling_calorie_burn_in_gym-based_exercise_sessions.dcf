@@ -1,0 +1,10 @@
+name: modeling_calorie_burn_in_gym-based_exercise_sessions
+title:
+username: piqim
+account: piqim
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 16450049
+bundleId: 11458826
+url: https://piqim.shinyapps.io/modeling_calorie_burn_in_gym-based_exercise_sessions/
+version: 1

@@ -35,24 +35,24 @@ gym_data <- read_csv("dataset/gym_members_exercise_tracking.csv",
 # ==============================================================================
 
 ui <- dashboardPage(
-  skin = "blue",
+  skin = "green",
   
   # Header ---------------------------------------------------------------------
   dashboardHeader(
-    title = "Gym Exercise Analytics",
-    titleWidth = 300
+    title = "Gym-Based Exercise and Calorie Expenditure Model",
+    titleWidth = 550
   ),
   
   # Sidebar --------------------------------------------------------------------
   dashboardSidebar(
-    width = 300,
+    width = 550,
     sidebarMenu(
-      menuItem("📊 Data Explorer", tabName = "data_tab", icon = icon("database")),
-      menuItem("📈 Descriptive Stats", tabName = "descriptive_tab", icon = icon("chart-bar")),
+      menuItem("ℹ️ About", tabName = "about_tab", icon = icon("info-circle")),
+      menuItem("📊 Explore the Data Set", tabName = "data_tab", icon = icon("database")),
+      menuItem("📈 Descriptive Analysis", tabName = "descriptive_tab", icon = icon("chart-bar")),
       menuItem("🔬 Statistical Inference", tabName = "inference_tab", icon = icon("flask")),
       menuItem("🤖 Modeling & Prediction", tabName = "modeling_tab", icon = icon("brain")),
-      menuItem("📥 Download Results", tabName = "download_tab", icon = icon("download")),
-      menuItem("ℹ️ About", tabName = "about_tab", icon = icon("info-circle"))
+      menuItem("📥 Download Results", tabName = "download_tab", icon = icon("download"))
     )
   ),
   
@@ -63,6 +63,25 @@ ui <- dashboardPage(
         .box-title { font-weight: bold; }
         .info-box { cursor: pointer; }
         .small-box { cursor: pointer; }
+        
+        /* Move burger icon to the right */
+        .main-header .sidebar-toggle {
+          float: right;
+        }
+        
+        /* Mobile: center the burger icon */
+        @media (max-width: 767px) {
+          .main-header .sidebar-toggle {
+            float: none;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+
+        /* Optional: adjust spacing from the right edge */
+        .main-header .navbar {
+          margin-right: 0;
+        }
       "))
     ),
     
@@ -217,7 +236,7 @@ ui <- dashboardPage(
             width = 8,
             verbatimTextOutput("test_results"),
             hr(),
-            h4("Plain Language Interpretation"),
+            h4("What this means in Plain Language:"),
             uiOutput("test_interpretation")
           )
         ),
@@ -475,8 +494,14 @@ ui <- dashboardPage(
                        target = "_blank")),
             
             h4("Author"),
+            p("Mustaqim Bin Burhanuddin (PIQIM)"),
+            h4("Disclaimer"),
             p("Created as part of a data analysis portfolio project"),
-            p("Dataset: Gym Members Exercise Tracking (973 observations, 15 variables)")
+            p("Dataset: Gym Members Exercise Tracking (973 observations, 15 variables)"),
+            h4("Repository"),
+            p("📁 ", a("GitHub Repository", 
+                       href = "https://github.com/piqim/Modeling-Calorie-Burn-in-Gym-Based-Exercise-Sessions",
+                       target = "_blank"))
           )
         )
       )
