@@ -1,5 +1,6 @@
 # 🏋️ Modeling Calorie Burn in Gym-Based Exercise Sessions
 Author: Mustaqim Bin Burhanuddin (Piqim)
+Host: https://piqim.shinyapps.io/modeling_calorie_burn_in_gym-based_exercise_sessions/
 
 This project transforms the **Gym Members Exercise** dataset into a complete **data analysis + statistical inference** workflow, culminating in an **interactive R Shiny web application**.
 
