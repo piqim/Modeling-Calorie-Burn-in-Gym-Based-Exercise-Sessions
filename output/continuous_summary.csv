@@ -1,0 +1,13 @@
+Variable,Mean,Median,SD,Min,Max
+Age,38.68,40,12.18,18,59
+Avg_BPM,143.77,143,14.35,120,169
+BMI,24.91,24.16,6.66,12.32,49.84
+Calories_Burned,905.42,893,272.64,303,1783
+Fat_Percentage,24.98,26.2,6.26,10,35
+Height (m),1.72,1.71,0.13,1.5,2
+Max_BPM,179.88,180,11.53,160,199
+Resting_BPM,62.22,62,7.33,50,74
+Session_Duration (hours),1.26,1.26,0.34,0.5,2
+Water_Intake (liters),2.63,2.6,0.6,1.5,3.7
+Weight (kg),73.85,70,21.21,40,129.9
+Workout_Frequency (days/week),3.32,3,0.91,2,5

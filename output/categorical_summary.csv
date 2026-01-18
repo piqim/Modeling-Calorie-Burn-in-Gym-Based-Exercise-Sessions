@@ -1,0 +1,10 @@
+Variable,Category,Count,Percentage
+Experience_Level_Label,Beginner,376,38.64
+Experience_Level_Label,Expert,191,19.63
+Experience_Level_Label,Intermediate,406,41.73
+Gender,Female,462,47.48
+Gender,Male,511,52.52
+Workout_Type,Cardio,255,26.21
+Workout_Type,HIIT,221,22.71
+Workout_Type,Strength,258,26.52
+Workout_Type,Yoga,239,24.56
